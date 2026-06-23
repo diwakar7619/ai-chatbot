@@ -26,3 +26,14 @@ Status: Not Started
 
 ## Project 3 - AI Agent
 Status: Not Started
+
+
+What I built today:
+Streamlit chatbot
+Groq API integration
+Chat history memory
+Refactored API call into function
+Stopped at:
+First milestone commit
+Next step:
+Improve chatbot UX and prepare for deployment
