@@ -19,6 +19,10 @@ def get_ai_response(messages):
 
 st.title("AI Chatbot")
 
+if st.sidebar.button("Clear Chat"):
+    st.session_state.messages = []
+    st.rerun()
+
 if "messages" not in st.session_state:
     st.session_state.messages = []
 
