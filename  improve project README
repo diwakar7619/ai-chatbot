@@ -1,0 +1,116 @@
+[1mdiff --git a/README.md b/README.md[m
+[1mindex 05eb4b3..af06137 100644[m
+[1m--- a/README.md[m
+[1m+++ b/README.md[m
+[36m@@ -1,25 +1,103 @@[m
+ # AI Chatbot[m
+ [m
+[31m-A Streamlit chatbot powered by Groq and Llama 3.[m
+[32m+[m[32mA conversational AI chatbot built with Python, Streamlit, and Groq's Llama model. The application provides a clean chat interface, supports multi-turn conversations using chat history, and securely manages API keys through environment variables.[m
+[32m+[m
+[32m+[m[32m## Live Demo[m
+[32m+[m
+[32m+[m[32m[text](https://ai-chatbot-zxmgwtvbr99cqdg6ejxcew.streamlit.app/)[m
+ [m
+ ## Features[m
+ [m
+[31m-* Chat interface[m
+[31m-* Multi-turn conversation memory[m
+[31m-* Groq API integration[m
+[31m-* Environment variable support using .env[m
+[31m-* Clear chat button[m
+[32m+[m[32m* Conversational AI powered by Groq[m
+[32m+[m[32m* Multi-turn chat memory[m
+[32m+[m[32m* Streamlit chat interface[m
+[32m+[m[32m* Clear Chat functionality[m
+[32m+[m[32m* Environment variable support using `.env`[m
+[32m+[m[32m* GitHub version control and deployment-ready structure[m
+ [m
+ ## Tech Stack[m
+ [m
+[31m-* Python[m
+[32m+[m[32m* Python 3.13[m
+ * Streamlit[m
+ * Groq API[m
+[32m+[m[32m* Llama 3.3 70B Versatile[m
+ * python-dotenv[m
+[32m+[m[32m* uv[m
+[32m+[m[32m* Git & GitHub[m
+[32m+[m
+[32m+[m[32m## Project Structure[m
+[32m+[m
+[32m+[m[32m```text[m
+[32m+[m[32mai-chatbot/[m
+[32m+[m[32m├── main.py[m
+[32m+[m[32m├── README.md[m
+[32m+[m[32m├── pyproject.toml[m
+[32m+[m[32m├── uv.lock[m
+[32m+[m[32m├── .gitignore[m
+[32m+[m[32m└── .env[m
+[32m+[m[32m```[m
+[32m+[m
+[32m+[m[32m## How It Works[m
+[32m+[m
+[32m+[m[32m1. User enters a message in the Streamlit chat interface.[m
+[32m+[m[32m2. Message is stored in Streamlit session state.[m
+[32m+[m[32m3. Entire conversation history is sent to Groq.[m
+[32m+[m[32m4. Groq generates a response using Llama 3.[m
+[32m+[m[32m5. Response is displayed and added to chat history.[m
+ [m
+[31m-## Run Locally[m
+[32m+[m[32m## Local Setup[m
+[32m+[m
+[32m+[m[32m### Clone Repository[m
+[32m+[m
+[32m+[m[32m```bash[m
+[32m+[m[32mgit clone https://github.com/diwakar7619/ai-chatbot.git[m
+[32m+[m[32mcd ai-chatbot[m
+[32m+[m[32m```[m
+[32m+[m
+[32m+[m[32m### Create Environment[m
+ [m
+ ```bash[m
+ uv sync[m
+[32m+[m[32m```[m
+[32m+[m
+[32m+[m[32m### Create Environment Variables[m
+[32m+[m
+[32m+[m[32mCreate a `.env` file:[m
+[32m+[m
+[32m+[m[32m```env[m
+[32m+[m[32mGROQ_API_KEY=your_api_key_here[m
+[32m+[m[32m```[m
+[32m+[m
+[32m+[m[32m### Run Application[m
+[32m+[m
+[32m+[m[32m```bash[m
+ streamlit run main.py[m
+ ```[m
+[32m+[m
+[32m+[m[32m## Learning Outcomes[m
+[32m+[m
+[32m+[m[32mThis project helped me learn:[m
+[32m+[m
+[32m+[m[32m* LLM API integration[m
+[32m+[m[32m* Prompt and message structures[m
+[32m+[m[32m* Session state management[m
+[32m+[m[32m* Chat history handling[m
+[32m+[m[32m* Environment variable management[m
+[32m+[m[32m* Streamlit application development[m
+[32m+[m[32m* Git and GitHub workflows[m
+[32m+[m[32m* Cloud deployment basics[m
+[32m+[m
+[32m+[m[32m## Future Improvements[m
+[32m+[m
+[32m+[m[32m* Streaming responses[m
+[32m+[m[32m* Model selection dropdown[m
+[32m+[m[32m* Conversation export[m
+[32m+[m[32m* Usage analytics[m
+[32m+[m[32m* System prompts[m
+[32m+[m[32m* Dark/light theme customization[m
+[32m+[m
+[32m+[m[32m## Author[m
+[32m+[m
+[32m+[m[32mPratham Diwakar[m
+[32m+[m
+[32m+[m[32mGitHub: https://github.com/diwakar7619[m

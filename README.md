@@ -4,7 +4,7 @@ A conversational AI chatbot built with Python, Streamlit, and Groq's Llama model
 
 ## Live Demo
 
-[text](https://ai-chatbot-zxmgwtvbr99cqdg6ejxcew.streamlit.app/)
+[Live Demo](https://ai-chatbot-zxmgwtvbr99cqdg6ejxcew.streamlit.app/)
 
 ## Features
 
